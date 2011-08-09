@@ -14,14 +14,22 @@
 ; $       
 ; up       the hotkey to fire upon release of the key rather than when the key is pressed down
 
-; global variables
-SetWorkingDir %HOME%
+; global switches and variables
+#NoTrayIcon
+;#NoEnv
+#SingleInstance force
 SetTitleMatchMode RegEx
 
+;HOME := "e:\sean"
+
 ; includes
-#include tf.ahk
+#include %A_ScriptDir%\tf.ahk
+;#include %A_ScriptDir%\hidewnd.ahk
 
 #z::Run www.autohotkey.com
+#+r::Reload ; reload this script
+#+e::Edit ; opens the script for editing
+
 #i::Run www.google.com
 #`::Run ~
 #w::Run wiz
