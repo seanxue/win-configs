@@ -6,6 +6,7 @@ CVS
 *~
 \#*\#
 *.swp
+*.bak
 
 vim/tags/*/
 pac/lvsproxy.pac
