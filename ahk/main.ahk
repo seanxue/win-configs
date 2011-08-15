@@ -62,7 +62,8 @@ return
 GetFullPathFromAddressBar()
 {
   ; This is required to get the full path of the file from the address bar
-  WinGetText, full_path, A
+  Send !d
+  ControlGetText full_path, Edit1, A
 
   ; Split on newline (`n)
   StringSplit, word_array, full_path, `n
