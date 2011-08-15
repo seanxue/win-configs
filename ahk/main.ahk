@@ -33,6 +33,8 @@ SetTitleMatchMode RegEx
 #i::Run www.google.com
 #`::Run ~
 #w::Run wiz
+#g::Run gmail
+#m::Run gmusic
 
 #o::Run o.cmd
 #+c::Run o.cmd c
