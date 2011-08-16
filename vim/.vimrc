@@ -1,12 +1,12 @@
 " global functioins
 function! GetSys()
-    if has("win32")
-        return "win32"
-    elseif has("unix")
-        return "unix"
-    else
-        return "mac"
-    endif
+  if has("win32")
+    return "win32"
+  elseif has("unix")
+    return "unix"
+  else
+    return "mac"
+  endif
 endfunction
 
 " generic
