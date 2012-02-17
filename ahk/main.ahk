@@ -24,6 +24,7 @@ SetTitleMatchMode RegEx
 
 ; includes
 #include %A_ScriptDir%\tf.ahk
+;#include %A_ScriptDir%\sync-clipbrd.ahk
 ;#include %A_ScriptDir%\hidewnd.ahk
 
 #z::Run www.autohotkey.com
@@ -32,19 +33,20 @@ SetTitleMatchMode RegEx
 
 #i::Run www.google.com
 #`::Run ~
-#w::Run wiz
+#w::Run evernote
 #g::Run gmail
 #m::Run gmusic
 
-#o::Run o.cmd
-#+c::Run o.cmd c
-^!t::Run go.cmd
-^!+t::Run go.cmd lh
+#o::Run o.bat
+#+c::Run o.bat c
+^!t::Run go.bat
+^!+t::Run go.bat lh
 
 ; !F2::Run rundll32.exe shell32.dll,#61 ;how come this one doesn't work
 !F2::Send #r
 
 #n::Run Notepad
+#+n::Run n++
 
 #c::Run cmd /k cd /d %HOME%
 ; Stuff to do when Windows Explorer is open

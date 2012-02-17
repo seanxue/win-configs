@@ -9,4 +9,5 @@ CVS
 *.bak
 
 vim/tags/*/
+vim/.netrwhist
 pac/lvsproxy.pac
